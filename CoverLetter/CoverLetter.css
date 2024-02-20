@@ -1,0 +1,10 @@
+#cover {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding: 5em;
+    width: 80%;
+    height: 110%;
+    word-wrap: break-word;
+    background-color: white;
+}

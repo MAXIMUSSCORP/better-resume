@@ -1,0 +1,140 @@
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(232, 235, 246, 0.37);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 1em;
+}
+
+.searchCard, .loadCard {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.loadCard {
+    opacity: 0;
+    transition: opacity 2s ease-out;
+}
+
+h1 {
+    font-family: 'AppleBold';
+    color: #ffffff;
+    text-align: center;
+}
+
+p {
+    font-family: 'Apple';
+    color: #ffffff;
+    text-align: center;
+}
+
+#search {
+    font-family: 'Apple';
+    color: #ffffff;
+    text-align: center;
+    background: rgba(31, 31, 31, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(232, 235, 246, 0.37);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border: 0;
+    border-radius: .5em;
+    padding: 0.5em 3em;
+    width: 15%;
+}
+
+.logos {
+    position: relative;
+    width: 100%;
+}
+
+.logos img {
+    width: 5em;
+    position: absolute;
+    top: -5em;
+    animation: fall 8s linear infinite;
+    animation-iteration-count: infinite;
+}
+
+#loadText {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100vw);
+    }
+}
+
+@font-face {
+    font-family: 'Apple'; /* Give a name to your font */
+    src: local('AppleRegular'), url('../fonts/SF-Pro.ttf') format('truetype'); /* Path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AppleBold';
+    src: local('AppleBold'), url('/fonts/SF-Pro-Text-Bold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* css loader from https://loading.io/css/ */
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+

@@ -1,0 +1,108 @@
+#animated {
+    position: fixed;
+    top: 0;
+    height: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    color: #ffffff;
+    background: #000000;
+    border-bottom: 0.01em solid #282828;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    font-size: 1em;
+}
+
+.navBar .resume {
+    margin-left: 3em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.navBar .resume p {
+    margin: 0;
+    align-self: center;
+}
+
+#pdf {
+    font-size: 0.5em;
+}
+
+.navBar .coverLetter {
+    margin-left: 6em;
+    cursor: pointer;
+    align-self: center;
+}
+
+.navBar .contact {
+    margin-left: 6em;
+    cursor: pointer;
+    align-self: center;
+}
+
+.right-content {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navBar img {
+    order: 2;
+    height: 75%;
+    cursor: pointer;
+}
+
+.placeholder {
+    height: 1000vh;
+}
+
+p {
+    font-family: 'Apple';
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'AppleBold';
+}
+
+@font-face {
+    font-family: 'AppleBold'; /* Give a name to your font */
+    src: local('AppleBold'), url('/fonts/SF-Pro-Text-Bold.otf') format('truetype'); /* Path to your font file */
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apple'; /* Give a name to your font */
+    src: local('AppleRegular'), url('../fonts/SF-Pro.ttf') format('truetype'); /* Path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AppleMedium'; /* Give a name to your font */
+    src: local('AppleMedium'), url('../fonts/SF-Pro-Text-Medium.otf') format('truetype'); /* Path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}

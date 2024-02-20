@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+</head>
+<link href="resume.css" rel="stylesheet">
+<body style="background-color: #0f0f0f">
+<div class="navBar">
+    <div class="resume">
+        <p>BASIC RESUME</p>
+        <p id="pdf">PDF</p>
+    </div>
+    <div class="coverLetter"
+         onclick="window.location.href = 'coverLetter.html'">
+        <p>COVER LETTER</p>
+    </div>
+    <div class="contact">
+        <p>CONTACT</p>
+    </div>
+    <div class="right-content">
+        <p id="git" style="opacity: 0; transition: opacity 1s ease;">source
+            code</p>
+        <img alt="github"
+             onmouseenter="TAppear('git')"
+             onmouseleave="TDisappear('git')"
+             src="https://img.icons8.com/material-sharp/128/ffffff/github.png"/>
+    </div>
+</div>
+<div id="animated"></div>
+<div class="placeholder">
+    <h1>What are you looking for?</h1>
+</div>
+<script src="../lottie.js"></script>
+<script src="ScrollAnimation.js"></script>
+<script src="UIAnim.js"></script>
+</body>
+</html>
